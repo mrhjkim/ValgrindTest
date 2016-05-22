@@ -3,4 +3,4 @@
 rm -Rf bin
 
 mkdir bin
-g++ -o bin/test_leak test_leak.cpp
+g++ -o bin/test_leak -g test_leak.cpp

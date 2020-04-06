@@ -1,9 +1,10 @@
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 
 void f()
 {
-  int* i = new int(42);
-  std::cout << *i << std::endl;
+  int* i = (int*)malloc(sizeof(int)*42);
+  printf( "%p", i);
 }
 
 int main()
